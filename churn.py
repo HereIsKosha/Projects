@@ -16,7 +16,6 @@ y = dataset.iloc[:, 20].values
 
 # Encoding categorical data
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
-# Below lines should be commented to avoid make_column_transformer - Future error at line 41
 labelencoder_X_1 = LabelEncoder()
 X[:, 0] = labelencoder_X_1.fit_transform(X[:, 0])
 labelencoder_X_2 = LabelEncoder()
